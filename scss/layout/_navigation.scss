@@ -1,0 +1,36 @@
+@use "../abstract";
+// @use "../components";
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 41px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__list {
+            position: relative;
+            margin-left: 17px;
+            margin-right: 17px;
+        };
+        &__list:last-child::after{
+            content: "";
+
+        }
+        &--link {
+            color: abstract.$text-color;
+            font-family: Inter;
+            font-size: 2em;
+            font-weight: 400;
+        };
+    }
+    &__btn--contact {
+        padding: 13px 31px 14px 31px;
+        background-color: abstract.$main-btn-color;
+        color: #ffffff;
+        border-radius: 29px;
+        font-size: 2em;
+        font-weight: 500;
+    }
+};

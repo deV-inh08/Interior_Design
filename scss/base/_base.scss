@@ -2,11 +2,14 @@
     box-sizing: border-box;
 };
 
+a {
+    text-decoration: none;
+}
+
 html {
     font-size: 62.5%;
 };
 
 body {
-    font-size: 1.6em;
-    font-family: Inter sans-serif;
+    font-family: Inter, sans-serif;
 }

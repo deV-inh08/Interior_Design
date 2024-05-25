@@ -1,0 +1,6 @@
+@use "../abstract";
+%main-btn {
+    padding: 13px 31px;
+    background-color: abstract.$main-btn-color;
+    color: #ffffff;
+}
