@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -72,6 +68,71 @@ body {
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 41px;
+}
+.menu__header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__header__list {
+  position: relative;
+  margin-left: 17px;
+  margin-right: 17px;
+}
+.menu__header__list:last-child::after {
+  content: "";
+}
+.menu__header--link {
+  color: #22201F;
+  font-family: Inter;
+  font-size: 2em;
+  font-weight: 400;
+}
+.menu__btn--contact {
+  padding: 13px 31px 14px 31px;
+  background-color: #22201F;
+  color: #ffffff;
+  border-radius: 29px;
+  font-size: 2em;
+  font-weight: 500;
+}
+.menu__board {
+  display: none;
+  position: absolute;
+  width: 280px;
+  height: 360px;
+  border-radius: 10px;
+  background: #D6D8D9;
+  bottom: -370px;
+  left: 100px;
+  z-index: 1;
+}
+.menu__board--child {
+  margin: 30px 195px 30px 30px;
+}
+.menu__board--child > li {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  height: 34px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 4px 0;
+}
+.menu__board--child > li > .board--child--link {
+  color: #22201F;
+}
+.menu__header__list:hover .menu__header > .menu__board {
+  display: block;
 }
 
 .header {
@@ -153,40 +214,6 @@ body {
 }
 .header__image--3 {
   margin-left: 114px;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 41px;
-}
-.menu__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu__header__list {
-  position: relative;
-  margin-left: 17px;
-  margin-right: 17px;
-}
-.menu__header__list:last-child::after {
-  content: "";
-}
-.menu__header--link {
-  color: #22201F;
-  font-family: Inter;
-  font-size: 2em;
-  font-weight: 400;
-}
-.menu__btn--contact {
-  padding: 13px 31px 14px 31px;
-  background-color: #22201F;
-  color: #ffffff;
-  border-radius: 29px;
-  font-size: 2em;
-  font-weight: 500;
 }
 
 /*# sourceMappingURL=main.css.map */
