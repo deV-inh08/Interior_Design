@@ -114,6 +114,7 @@ body {
   bottom: -370px;
   left: 100px;
   z-index: 1;
+  transition: all 0.75s;
 }
 .menu__board--child {
   margin: 30px 195px 30px 30px;
@@ -131,7 +132,12 @@ body {
 .menu__board--child > li > .board--child--link {
   color: #22201F;
 }
-.menu__header__list:hover .menu__header > .menu__board {
+.menu__board > .line {
+  width: 100px;
+  height: 2px;
+  color: #22201F;
+}
+.menu--toogle:hover ~ .menu__board {
   display: block;
 }
 

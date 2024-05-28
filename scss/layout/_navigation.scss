@@ -43,6 +43,7 @@
         bottom: -370px;
         left: 100px;
         z-index: 1;
+        transition: all 0.75s;
         &--child {
             margin: 30px 195px 30px 30px;
 
@@ -60,8 +61,13 @@
                 }
             }
         }
+        & > .line {
+            width: 100px;
+            height: 2px;
+            color: abstract.$text-color;
+        }
     };
-    &__header__list:hover &__header > &__board {
-        display: block;   
+    &--toogle:hover ~ &__board{
+        display: block;
     }
 };
