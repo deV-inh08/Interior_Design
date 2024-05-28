@@ -15,12 +15,8 @@
             margin-left: 17px;
             margin-right: 17px;
         };
-        // &__list:hover &__board {
-            
-        // }
         &__list:last-child::after{
             content: "";
-
         };
         &--link {
             color: abstract.$text-color;
@@ -66,19 +62,6 @@
         }
     };
     &__header__list:hover &__header > &__board {
-        display: block
-        
+        display: block;   
     }
-    // &__board--child {
-        
-    //     & > li {
-    //         padding: 0 195px 0 30px;
-    //     }
-    //     &  .board--child--link {
-    //         font-family: Inter;
-    //         font-size: 20px;
-    //         font-weight: 400;
-    //         color: abstract.$text-color;
-    //     }
-    // };
 };
